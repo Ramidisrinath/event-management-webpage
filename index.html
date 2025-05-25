@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Events - Premier Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Mridun Events</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creating Unforgettable Moments</h1>
+            <p>Your premier event management partner for all occasions</p>
+            <a href="#contact" class="cta-button">Plan Your Event</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Corporate Events</h3>
+                <p>Conferences, seminars, team building, and product launches</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-ring"></i>
+                <h3>Wedding Events</h3>
+                <p>Complete wedding planning including Haldi and Sangeet ceremonies</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Party Planning</h3>
+                <p>Birthday parties, anniversaries, and social gatherings</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Event Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="corporate-events.jpg" alt="Corporate Event">
+                <div class="overlay">Corporate Events</div>
+            </div>
+            <div class="gallery-item">
+                <img src="wed1.jpg" alt="Wedding">
+                <div class="overlay">Wedding Ceremonies</div>
+            </div>
+            <div class="gallery-item">
+                <img src="haldhi.jpg" alt="Haldi">
+                <div class="overlay">Haldi Ceremony</div>
+            </div>
+            <div class="gallery-item">
+                <img src="party.jpg" alt="Party">
+                <div class="overlay">Party Events</div>
+            </div>
+            <div class="gallery-item">
+                <img src="sangeet-ceremony-event-management-service.jpg" alt="Sangeet">
+                <div class="overlay">SangeetEvents</div>
+            </div>
+            <div class="gallery-item">
+                <img src="festival.jpg" alt="Festivals">
+                <div class="overlay">Festivals</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form" action="process_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="event_date" required>
+                <input type="text" name="place" placeholder="Event Venue/Location" required>
+                <select name="event_type" required>
+                    <option value="">Select Event Type</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="wedding">Wedding Event</option>
+                    <option value="party">Party</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your event" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Elegant Events</h4>
+                <p>Creating memorable experiences since 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@elegantevents.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Elegant Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
